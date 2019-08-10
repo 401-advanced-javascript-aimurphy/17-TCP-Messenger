@@ -16,8 +16,6 @@
 * [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
-#### `event.js`
-##### exports events which is an instance of `new Event();`
 #### `logger.js`
 ##### event.on() will be listening for and reacting to any `error` and any `fs.write`.
 
@@ -29,7 +27,7 @@ This is our listener, we are going to create a handler function to be used as a 
 
 ### Setup
 #### `.env` requirements
-* PPORT 3001
+* PORT 3001
 
 #### Running the app
 * `node app.js`
@@ -43,4 +41,4 @@ This is our listener, we are going to create a handler function to be used as a 
 * What assertions need to be / should be made?
 
 #### UML
-![My best guess](./edaURL.jpg)
+![UML](./UML.jpg)
