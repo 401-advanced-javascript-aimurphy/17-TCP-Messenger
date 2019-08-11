@@ -5,14 +5,14 @@
 ### Author: Ai
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/401-advanced-javascript-aimurphy/17-TCP-Messenger/pull/2)
+* [![Build Status](https://travis-ci.com/401-advanced-javascript-aimurphy/17-TCP-Messenger.svg?branch=master)](https://travis-ci.com/401-advanced-javascript-aimurphy/17-TCP-Messenger)
+* [back-end](https://apm-tcp-mssngr.herokuapp.com/) (heroku)
 * [front-end](http://xyz.com) (when applicable)
 
 #### Documentation
 * [api docs](./) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
+* [jsdoc](http://apm-tcp-mssngr.herokuapp.com/docs/index.html) (Server assignments)
 * [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
