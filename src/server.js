@@ -1,7 +1,6 @@
 'use strict';
 
-// go make your dot env
-
+// go make your dot env PORT 3001
 // this server is a net server not an express server
 
 const net = require('net');
@@ -15,7 +14,7 @@ server.listen(port, () => console.log(`Server up on ${port}`) );
 let allowedEvent = ['create', 'read', 'update', 'delete', 'error', 'attack'];
 
 
-// socket pool is the list of people who are connected to the server
+// socket pool is the list of people who are connected to the server, 
 let socketPool = {};
 
 // @ 1053 socket is rthe little pipe in the big pipe. when you connect you 
@@ -58,10 +57,13 @@ let dispatchEvent = (buffer) => {
     // event: "create".
     // payload:"something got made"<--we are sending an obj like this over thewire... by doing a for loop.
     // }else{ignore the event}
+    for (let socket in socketPool) {
+      socketPool[socket].write(`${event} ${text}`);
+    }
+  }else{
+    console.log(`INGNORED ${event}`)
   }
-  for (let socket in socketPool) {
-    socketPool[socket].write(`${event} ${text}`);
-  }
+  
 };
 
 
