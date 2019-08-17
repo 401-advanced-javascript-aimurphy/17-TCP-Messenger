@@ -2,12 +2,15 @@
   "name": "tcp-server",
   "version": "1.0.0",
   "description": "tcp chatter",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node index.js",
     "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "author": "ai",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
