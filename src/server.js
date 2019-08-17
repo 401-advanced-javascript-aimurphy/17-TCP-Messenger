@@ -8,7 +8,7 @@ const net = require('net');
 const port = process.env.PORT || 3001;
 const server = net.createServer();
 
-server.listen(port, () => console.log(`Server up on ${port}`) );
+// server.listen(port, () => console.log(`Server up on ${port}`) );
 
 // @1052
 let allowedEvent = ['create', 'read', 'update', 'delete', 'error', 'attack'];
@@ -67,3 +67,4 @@ let dispatchEvent = (buffer) => {
 };
 
 
+module.exports = server;
